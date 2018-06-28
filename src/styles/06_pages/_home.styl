@@ -1,0 +1,478 @@
+.mundial
+  background url('../img/pattern.png') repeat fixed 0 0
+  background-size initial
+  margin-bottom 3rem
+  padding 8rem 0 2rem
+
+  @media (min-width: $bp-xl)
+    padding 5rem 0
+
+  header
+    .top
+      align-items center
+      background-image linear-gradient(to right bottom, rgba(255, 0, 0, .9), rgba(224, 1, 3, .9), rgba(196, 2, 5, .9), rgba(167, 3, 5, .9), rgba(139, 4, 4, .9))
+      border-radius .3rem .3rem 0 0
+      color $white
+      display flex
+      height 7rem
+      justify-content center
+      margin 0
+      mix-blend-mode multiply
+
+      @media (min-width: $bp-xl)
+        height 10rem
+
+      h1
+        background url('../svg/russia.svg') no-repeat center 0
+        margin 0
+        overflow hidden
+        padding 0
+        text-indent -9999%
+        width 175px
+
+    .grupos
+      display grid
+      grid-column-gap .2rem
+      grid-row-gap .2rem
+      grid-template-columns repeat(4, 1fr)
+      margin-top .2rem
+
+      @media (min-width: $bp-xl)
+        grid-column-gap .5rem
+        grid-row-gap inherit
+        grid-template-columns repeat(8, 1fr)
+        margin-top .35rem
+
+      .grupo
+        display flex
+        flex-flow row wrap
+        justify-content space-between
+        margin 0
+
+        dt
+          background-image linear-gradient(to right bottom, rgba(255, 0, 0, .9), rgba(224, 1, 3, .9), rgba(196, 2, 5, .9), rgba(167, 3, 5, .9), rgba(139, 4, 4, .9))
+          color $white
+          font-family 'montserrat', sans-serif
+          font-size .75em
+          margin-bottom .2rem
+          mix-blend-mode multiply
+          padding .3rem 0 .1rem
+          text-align center
+          text-transform uppercase
+          width 100%
+
+          @media (min-width: $bp-xl)
+            font-size inherit
+            margin-bottom .3rem
+            padding .6rem 0 .4rem
+
+        dd
+          display inline-block
+          height auto
+          margin 0
+          width 20%
+
+          img
+            height auto
+            width 100%
+
+  .mundial__highlight
+    margin-top 1rem
+
+    @media (min-width: $bp-xl)
+      margin-top 3rem
+
+    .media__list
+      display grid
+      grid-column-gap 1rem
+      grid-row-gap 1rem
+      grid-template-columns 1fr
+
+      @media (min-width: $bp-xl)
+        grid-row-gap inherit
+
+      .media__list--item
+        .media__img
+          height 10rem
+
+          @media (min-width: $bp-xl)
+            height inherit
+
+      @media (min-width: $bp-xl)
+        grid-column-gap 3rem
+        grid-template-columns repeat(3, 1fr)
+
+  .mundial__more
+    margin-top 1.5rem
+
+    @media (min-width: $bp-xl)
+      margin-top 3rem
+
+    .media__list
+      display grid
+      grid-column-gap 1rem
+      grid-row-gap 1rem
+      grid-template-columns repeat(2, 1fr)
+
+      @media (min-width: $bp-xl)
+        grid-column-gap 3rem
+        grid-row-gap inherit
+        grid-template-columns repeat(4, 1fr)
+
+.especial
+  background linear-gradient(to bottom, rgba(255, 246, 237, 1) 0, rgba(250, 234, 218, 1) 100%)
+  margin-bottom 3rem
+  padding 8rem 0 3rem
+
+  @media (min-width: $bp-xl)
+    padding 1.5rem 0 3rem
+
+  .media__info
+    h2
+      margin 2rem 0
+
+    ul
+      align-items center
+      display flex
+      justify-content space-around
+
+      img
+        width 5rem
+
+  .mod__highlight--especial
+    display grid
+    grid-auto-columns 100%
+    grid-row-gap 1.5rem
+    grid-template-rows auto
+
+    @media (min-width: $bp-xl)
+      grid-column-gap 3rem
+      grid-template-columns 60% 1fr
+
+  h1
+    font-size 1.5em
+
+    @media (min-width: $bp-xl)
+      font-size 2.5em
+
+  .media__horario
+    @media (min-width: $bp-xl)
+      grid-column 1 / -1
+      margin-top 2.5rem
+
+    h2
+      font-size 1.2em
+
+      @media (min-width: $bp-xl)
+        font-size 1.5em
+        margin-bottom 1.5rem
+
+  .especial__programas
+    display flex
+    flex-flow column wrap
+    font-family 'merriweather', sans-serif
+    justify-content center
+
+    @media (min-width: $bp-xl)
+      flex-flow row wrap
+
+    ul
+      // display: inline-block
+      font-size 1em
+      line-height 1.5
+      margin-right 1.5rem
+
+      li
+        font-weight 700
+        margin-bottom .5rem
+        text-transform uppercase
+
+        @media (min-width: $bp-xl)
+          border-right 1px solid lightness($monumental, 70%)
+          padding-right 1.5rem
+
+        span
+          color $monumental
+
+  .especial--title
+    align-items center
+    display flex
+    flex-flow row wrap
+    justify-content space-between
+
+    .pyvota
+      position relative
+      width auto
+
+      a
+        background lightness($black, 60%)
+        border-radius 2px
+        color $white
+        font-family 'montserrat', sans-serif
+        font-size 1.2em
+        font-weight 700
+        margin-right 1rem
+        padding .25rem .75rem .25rem .25rem
+
+        @media (min-width: $bp-xl)
+          font-size 1.5em
+          padding .5rem 1.5rem .5rem .5rem
+
+      img
+        margin -.4rem 0 0 -1.95rem
+        width 38px
+
+        @media (min-width: $bp-xl)
+          margin -.4rem 0 0 -2.3rem
+          width 38px
+
+  .mod__highlight
+    .media__list
+      align-items start
+      display grid
+      grid-auto-columns 1fr
+      grid-auto-flow dense
+      grid-column-gap 1rem
+      grid-row-gap 1rem
+      justify-content start
+
+      @media (min-width: $bp-xl)
+        // -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+        // display: -ms-grid
+        grid-gap 2.5rem
+        grid-template-columns repeat(auto-fill, minmax(25%, 1fr))
+
+      .media__list--item
+        .media__img
+          height 10rem
+
+        img
+          height 10rem
+          width 100%
+
+.mod__highlight
+  &.falg
+    padding-top 3rem
+
+  .media__list
+    align-items start
+    display grid
+    grid-auto-columns 1fr
+    grid-auto-flow dense
+    grid-column-gap 1rem
+    grid-row-gap 2rem
+    justify-content start
+
+    @media (min-width: $bp-xl)
+      display -ms-grid
+      grid-auto-columns inherit
+      grid-column-gap 3rem
+      grid-row-gap 3rem
+      grid-template-columns repeat(auto-fill, minmax(1fr, 25vw))
+      grid-template-rows auto auto
+      -ms-grid-columns 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+    .video__container
+      margin 0
+
+    .media__list--item-1, .media__list--item-2
+      @media (min-width: $bp-xl)
+        grid-row 1
+        -ms-grid-row 1
+
+    .media__list--item-1
+      @media (min-width: $bp-xl)
+        grid-column 1 / 6
+        -ms-grid-column 1
+        -ms-grid-column-span 7 /* remember the gutter is a column track! */
+
+    .media__list--item-2
+      @media (min-width: $bp-xl)
+        grid-column 6 / 9
+        -ms-grid-column 9
+        -ms-grid-column-span 4 /* remember the gutter is a column track! */
+
+    .media__list--item-3, .media__list--item-4, .media__list--item-5, .media__list--item-6
+      grid-gap 1rem
+      grid-template-columns 1fr 2fr
+
+      h2
+        margin 0
+
+      @media (min-width: $bp-xl)
+        grid-row 2
+        grid-template-columns inherit
+        -ms-grid-row 2
+
+        h2
+          margin inherit
+
+      .media__img
+        height 15vh
+
+    .media__list--item-3
+      @media (min-width: $bp-xl)
+        grid-column 1 / 3
+        -ms-grid-column 1
+        -ms-grid-column-span 2 /* remember the gutter is a column track! */
+
+    .media__list--item-4
+      @media (min-width: $bp-xl)
+        grid-column 3 / 5
+        -ms-grid-column 4
+        -ms-grid-column-span 2 /* remember the gutter is a column track! */
+
+    .media__list--item-5
+      grid-row 6
+      grid-template-columns 1fr
+
+      .media__img
+        height auto
+
+      @media (min-width: $bp-xl)
+        grid-column 5 / 7
+        grid-row inherit
+        -ms-grid-column 7
+        -ms-grid-column-span 2 /* remember the gutter is a column track! */
+
+        &.span-2
+          grid-column 5 / 9
+
+    .media__list--item-6
+      @media (min-width: $bp-xl)
+        grid-column 7 / 9
+        -ms-grid-column 10
+        -ms-grid-column-span 2 /* remember the gutter is a column track! */
+
+        &.hide
+          display none
+
+.media__hero
+  background-color transparent
+  background-image linear-gradient(transparent, rgba(0, 0, 0, 15))
+  background-position-y -1px
+  bottom -1px
+  color $white
+  height auto
+  left 0
+  margin 0
+  padding 15% 1rem 1rem
+  position absolute
+  right 0
+  width 100%
+
+  @media (min-width: $bp-xl)
+    padding 15% 1.5rem 1.5rem
+
+  .media__title
+    margin 0
+    text-shadow rgba(black, .5) 1px 1px 5px
+
+.mod__wrapper
+  display grid
+  grid-auto-columns 1fr
+  grid-auto-flow dense
+  grid-column-gap 4rem
+  grid-row-gap 3rem
+  grid-template-rows auto
+  padding-top 1.5rem
+
+  @media (min-width: $bp-xl)
+    grid-auto-columns inherit
+    grid-template-columns 4fr 3fr 3fr
+    margin-top 3rem
+
+  .media__title
+    color $black
+
+  .mod__latest
+    .media__list
+      display grid
+      grid-auto-flow dense
+      // grid-column-gap: 2.5rem
+      grid-row-gap 1.5rem
+      grid-template-columns 1fr
+      grid-template-rows auto
+
+      h2
+        margin-top -.2rem
+
+      .media__list--item
+        border-bottom 1px solid lightness($black, 90%)
+        display grid
+        grid-column-gap 1.5rem
+        grid-template-columns 1fr 2fr
+        padding-bottom 1.5rem
+
+        &:last-child
+          border-bottom none
+          padding-bottom 0
+
+        .media__img
+          height 6rem
+
+        .media__img--responsive
+          height 6rem
+
+// ULTIMA HORA
+.mod__more-news
+  padding-left 3rem
+
+  .uh
+    display block
+    height 28px
+    margin 1.5rem 0 1.5rem -3rem
+
+    img
+      height 28px
+      object-fit cover
+
+  .media__list
+    border-left 1px solid lightness($monumental, 80%)
+    padding-left 1.1rem
+
+  .media__list--item
+    margin-bottom 1.5rem
+    overflow inherit
+
+    &:before
+      color lightness($black, 60%)
+      content attr(data-date)
+      display block
+      font-family 'montserrat', sans-serif
+      font-size .9em
+      font-weight 100
+      left -4.1rem
+      min-width auto
+      position absolute
+      text-align right
+      top .4rem
+
+    &:after
+      background lightness($monumental, 92%)
+      border 1px solid lightness($monumental, 80%)
+      border-radius 50%
+      content ''
+      display block
+      height 10px
+      left -1.41rem
+      position absolute
+      top .4rem
+      width 10px
+
+  .media__title
+    color $black
+    margin 0
+    padding 0
+
+    &:last-child
+      padding-bottom 0
+
+.mod__twitter
+  display none
+
+  @media (min-width: $bp-xl)
+    display inherit
+
+    #twitter-widget-0
+      height 70vh !important

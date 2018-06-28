@@ -1,0 +1,14 @@
+<svg width="40" height="40" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon-youtube</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(6769 -3421)">
+<g id="icon-youtube">
+<use xlink:href="#path0_fill" transform="translate(-6769 3421)" fill="#FFFFFF"/>
+<use xlink:href="#path1_fill" transform="translate(-6769 3421)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 17.4541 14.6118L 17.4541 24.3936L 24.7236 19.5029L 17.4541 14.6118Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 40 20C 40 31.0457 31.0459 40 20 40C 8.9541 40 0 31.0457 0 20C 0 8.95435 8.9541 0 20 0C 31.0459 0 40 8.95435 40 20ZM 28.9233 10.9092C 31.0244 10.9092 32.7275 12.6477 32.7275 14.793L 32.7271 25.2073C 32.7271 27.3518 31.0244 29.0911 28.9233 29.0911L 11.0762 29.0911C 8.97607 29.0911 7.27295 27.3523 7.27295 25.2073L 7.27295 14.793C 7.27295 12.6482 8.97559 10.9092 11.0762 10.9092L 28.9233 10.9092Z"/>
+</defs>
+</svg>

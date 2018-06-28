@@ -1,0 +1,477 @@
+.mod__news
+
+  .media__list
+    align-items: start
+    display: grid
+    grid-auto-columns: 1fr
+    grid-row-gap: 1.5rem
+
+    h2
+      margin-top: inherit
+
+    @media (min-width: $bp-xl)
+      grid-auto-flow: dense
+      grid-column-gap: 2.5rem
+      grid-row-gap: 2.5rem
+      grid-template-columns: repeat(12, 1fr)
+      // grid-template-rows: minmax(150px, auto) minmax(150px, auto)
+      // grid-auto-rows: minmax(100px, auto)
+
+    .media__list--item-1
+      grid-column: 1 / 13
+
+      @media (min-width: $bp-xl)
+        grid-column: 1 / 9
+        grid-row: 1 / 3
+
+      .media__img
+        height: 18rem
+
+        @media (min-width: $bp-xl)
+          height: 23rem
+
+      .media__img--responsive
+        height: 18rem
+
+        @media (min-width: $bp-xl)
+          height: 23rem
+
+    .media__list--publi
+      grid-column: 1 / 13
+      grid-row: 4 / 5
+
+      @media (min-width: $bp-xl)
+        grid-column: 9 / 13
+        grid-row: 1
+
+      p
+        color: lightness($black, 70%)
+        // display: block
+        display: none
+        font-size: 1.1em
+        letter-spacing: .05em
+        margin: 0
+        text-transform: uppercase
+
+      .publicidad--top
+        background: lightness($black, 90%)
+        display: block
+        height: auto
+
+        img
+          height: auto
+          object-fit: cover
+          width: 100%
+
+    .media__list--item-2
+      grid-row: 2 / 3
+
+    .media__list--item-3
+      grid-row: 3 / 4
+
+    .media__list--item-2,
+    .media__list--item-3
+
+      h2
+        margin-top: 1rem
+
+      @media (min-width: $bp-xl)
+        grid-row: 3 / 7
+
+      .media__img
+        height: 12rem
+
+      .media__img--responsive
+        height: 12rem
+
+    .media__list--item-2
+      grid-column: 1 / 13
+
+      @media (min-width: $bp-xl)
+        grid-column: 1 / 5
+
+    .media__list--item-3
+      grid-column: 1 / 13
+
+      @media (min-width: $bp-xl)
+        grid-column: 5 / 9
+
+    .media__list--item-4,
+    .media__list--item-5,
+    .media__list--item-6,
+    .media__list--item-7
+      // border-bottom: 1px solid lightness($black, 90%)
+      display: grid
+      grid-auto-flow: dense
+      grid-column: 1 / 13
+      grid-column-gap: 1.5rem
+      grid-template-columns: 1fr 2fr
+      // padding-bottom: 1.5rem
+
+      @media (min-width: $bp-xl)
+        grid-column: 9 / 13
+
+      .media__img
+        height: 6rem
+
+      .media__img--responsive
+        height: 6rem
+
+    .media__list--item-4
+
+      @media (min-width: $bp-xl)
+        grid-row: 2 / 3
+
+    .media__list--item-5
+
+      @media (min-width: $bp-xl)
+        grid-row: 3 / 4
+
+    .media__list--item-6
+
+      @media (min-width: $bp-xl)
+        grid-row: 4 / 5
+
+    .media__list--item-7
+
+      @media (min-width: $bp-xl)
+        grid-row: 5 / 6
+
+.mod__news--more
+
+  padding-top: 3rem
+
+  .media__list
+    align-items: start
+    display: grid
+    grid-auto-columns: 1fr
+    grid-row-gap: 1.5rem
+
+    @media (min-width: $bp-xl)
+      grid-auto-flow: dense
+      grid-auto-rows: auto
+      grid-column-gap: 2.5rem
+      grid-row-gap: 2.5rem
+      grid-template-columns: repeat(6, 1fr)
+      grid-template-rows: auto
+
+      .span-1
+        grid-column-end: span 3
+        grid-row-end: span 2
+
+.mod__content
+  &.search
+    .media__list
+      .media__list--item
+        height: auto
+
+        .media__overlay--link
+          .media__overlay--link:hover ~ * .media__title a,
+          .media__title a:hover
+            color: $monumental
+            opacity: .9
+
+        .media__img
+          height: 10rem
+
+          img
+            height: 10rem
+
+        .media__content
+          h2
+            margin-top: 0
+
+            a
+              color: $black
+
+    .navigation
+      margin-top: 2.5rem
+      grid-column: 1 / -1
+
+      h2
+        display: none
+
+      .nav-links
+        align-content: center
+        display: flex
+        grid-column: 1 / -1
+        justify-content: space-between
+
+        a
+          color: $monumental
+          font-family: 'montserrat', sans-serif
+
+  &.news
+    .gallery
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+
+      .gallery-item
+        margin: 0 .5rem
+        width: calc(100% / 4)
+
+        a
+          // display: block
+          height: 9rem
+
+        img
+          height: 9rem
+          margin: .5rem
+          object-fit: cover
+          width: 100%
+
+        figcaption
+          display: none
+
+    header
+      align-content: center
+      border-bottom: 1px solid lightness($black, 90%)
+      display: flex
+      flex-flow: row wrap
+      justify-content: center
+      margin-bottom: 1rem
+      padding-bottom: 1rem
+
+      @media (min-width: $bp-xl)
+        margin-bottom: 1.5rem
+        padding-bottom: 1rem
+
+      h1
+        flex: 2 0 100%
+        line-height: 1.2
+
+      .mod__date
+        align-self: flex-end
+        flex: 1 0 0
+        font-size: .9em
+        text-align: right
+        text-transform: uppercase
+
+        @media (min-width: $bp-xl)
+          font-size: 1.2em
+          text-align: inherit
+
+    article
+
+      .featured-image-caption
+        align-items: center
+        color: lightness($black, 50%)
+        display: flex
+        font-size: 1.1em
+        margin-top: .5rem
+        justify-content: flex-start
+
+        &:before
+          background: url(../svg/icon-camera.svg) no-repeat
+          content: ""
+          height: 14px
+          margin-right: .5rem
+          opacity: .7
+          width: 16px
+
+      p
+        font-size: 1.4em
+        margin-bottom: 1.6rem
+
+        @media (min-width: $bp-xl)
+          font-size: 1.7em
+          padding-right: 5rem
+
+        // &:first-of-type
+        //   color: $black
+        //   font-size: 2em
+        //   line-height: 1.5
+
+      h2, h3
+        border-bottom: 0
+        margin: 2.5rem 0 1rem
+        padding: 0
+        text-transform: inherit
+
+      h2
+        font-size: 1.8em
+
+        @media (min-width: $bp-xl)
+          font-size: 2.5em
+
+      h3
+        font-size: 1.45em
+
+        &:before
+          display: none
+
+        @media (min-width: $bp-xl)
+          font-size: 1.85em
+
+      a
+        border-bottom: 1px solid lightness($monumental, 85%)
+        color: $monumental
+        transition: all .3s ease
+
+        &:hover,
+        &:focus
+          border-bottom: 1px solid lightness($monumental, 80%)
+          color: lightness($monumental, 60%)
+
+      strong
+        color: $black
+        font-weight: 700
+
+      em,
+      i
+        font-style: italic
+
+      ul, ol
+        list-style-position: inside
+        margin: 0
+        padding-left: 1rem
+
+        @media (min-width: $bp-xl)
+          padding: 0
+
+        li
+          color: lightness($black, 40%)
+          font-size: 1.4em
+          line-height: 1.6
+          margin-bottom: .7rem
+
+          @media (min-width: $bp-xl)
+            font-size: 1.7em
+
+        & + p
+          margin-top: 1.5rem
+
+      ul
+        li
+          align-items: center
+          display: flex
+          justify-content: flex-start
+
+          &:before
+            background: url(../svg/line-ul.svg) no-repeat
+            content: ""
+            height: 1px
+            margin-left: -1rem
+            opacity: .4
+            padding-right: 1rem
+            width: 8px
+
+      ol
+        counter-reset: li
+
+        li
+          align-items: center
+          counter-increment: li
+          display: flex
+          justify-content: flex-start
+
+          &:before
+            color: $monumental
+            content: counter(li)
+            height: 1px
+            margin: -.7rem 0 0 -1rem
+            opacity: .4
+            padding-right: 1rem
+            width: 8px
+
+      blockquote
+        border: 1px solid lightness($black, 80%)
+        border-width: 1px 0
+        font-size: 1.2em
+        font-style: italic
+        font-weight: 700
+        margin: .5rem 0 1.2rem
+        padding: 0
+        width: 100%
+
+        @media (min-width: $bp-xl)
+          float: right
+          margin: .5rem 0 1.2rem 2rem
+          width: 40%
+
+        p
+          padding: 0
+
+
+      .wp-caption,
+      figure
+        margin: 1.5rem 0
+        padding: 0
+
+        img
+          margin: 0
+
+        .wp-caption-text,
+        figcaption
+          align-items: center
+          color: lightness($black, 50%)
+          display: flex
+          font-size: 1.1em
+          margin-top: .5rem
+          justify-content: flex-start
+
+          &:before
+            background: url(../svg/icon-camera.svg) no-repeat
+            content: ""
+            height: 14px
+            margin-right: .5rem
+            opacity: .7
+            width: 16px
+
+      img
+        height: 60vh
+        object-fit: cover
+        object-position: 0 0
+        width: 100%
+
+    .entry-footer
+
+      .cat-links,
+      .edit-link
+        display: none
+
+  .mod__more
+    .media__list
+      display: grid
+      grid-auto-columns: 1fr
+      grid-auto-flow: dense
+      grid-column-gap: 1rem
+      grid-template-rows: auto
+
+      @media (min-width: $bp-xl)
+        grid-template-columns: 1fr 1fr 1fr
+
+      a
+        border: 0
+
+      .media__list--item
+        align-content: start
+        border-right: 1px solid lightness($black, 90%)
+        grid-template-columns: 1fr
+        height: auto
+        padding-right: 1rem
+
+        &:last-child
+          border: 0
+
+        .media__content
+          margin-top: 1rem
+          padding: 0
+
+        .media__title
+          margin: 0
+
+        .media__img
+          height: 15vh
+
+          img
+            height: 15vh
+            object-fit: cover
+
+        .media__tag
+          font-size: inherit
+          margin-top: 1.5rem
+
+  .mod_comments
+    margin-top: 2.5rem

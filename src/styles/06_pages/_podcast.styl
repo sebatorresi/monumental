@@ -1,0 +1,78 @@
+.mod__podcast
+  .media__list
+    display grid
+    grid-gap 1.5rem
+    grid-template-columns repeat(2, 1fr)
+
+    @media (min-width: $bp-xl)
+      grid-gap 2.5rem
+      grid-template-columns repeat(2, 1fr)
+
+    .media__list--item
+      align-items start
+      display grid
+      grid-auto-columns 1fr
+      justify-content start
+
+      @media (min-width: $bp-xl)
+        grid-template-columns repeat(2, 1fr)
+        height 15rem
+
+      .media__img
+        border 1px solid lightness($black, 90%)
+        height 10rem
+        margin-bottom 1rem
+
+        @media (min-width: $bp-xl)
+          height auto
+          margin-bottom 0
+
+      .media__content
+        @media (min-width: $bp-xl)
+          padding-left 1.5rem
+
+        li
+          background url('../svg/icon-play-podcast.svg') no-repeat 0 center
+          background-size 11px
+          border-bottom 1px solid lightness($black, 90%)
+          display inline-block
+          font-size 1em
+          margin-bottom .5rem
+          padding .3rem 0 .4rem 1.3rem
+          width 100%
+
+          @media (min-width: $bp-xl)
+            background-size 20px
+            border 0
+            display inherit
+            font-size 1.6em
+            margin-bottom 0
+            padding .6rem 0 .6rem 1.7rem
+            width inherit
+
+          a
+            color $black
+            display inline-block
+            transition .3s ease
+            width 100%
+
+            &:hover
+              color $monumental
+              opacity .9
+
+    h2
+      font-size 1.2em
+      margin-bottom .5rem
+
+      @media (min-width: $bp-xl)
+        font-size 1.7em
+        margin 0 0 1.5rem
+
+.mod__content
+  &.podcast
+    .media__img
+      border 1px solid lightness($black, 90%)
+      height 15rem
+
+      @media (min-width: $bp-xl)
+        height 25rem

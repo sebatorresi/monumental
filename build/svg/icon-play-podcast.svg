@@ -1,0 +1,12 @@
+<svg width="30" height="31" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>icon-play-podcast</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-584 -242)">
+<g id="icon-play-podcast">
+<use xlink:href="#path0_fill" transform="translate(584.149 242.639)" fill="#2D2D2D"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 14.8618 29.6965C 23.0698 29.6965 29.7236 23.0487 29.7236 14.8482C 29.7236 6.64778 23.0698 0 14.8618 0C 6.65387 0 0 6.64778 0 14.8482C 0 23.0487 6.65387 29.6965 14.8618 29.6965ZM 11.0835 7.54993L 11.0835 22.1465L 22.1669 14.8485L 11.0835 7.54993Z"/>
+</defs>
+</svg>

@@ -1,0 +1,42 @@
+.header
+  background $white
+  box-shadow 0 0 2.5em rgba(0, 0, 0, .3), 0 0 1.5rem rgba(0, 0, 0, .2)
+  height auto
+  padding-bottom .5rem
+  width 100%
+  z-index 10
+
+  @media (min-width: $bp-xl)
+    box-shadow inherit
+    margin-bottom 3rem
+    padding 0
+
+.top
+  align-items center
+  border-bottom 1px solid rgba($black, .1)
+  display grid
+  grid-template-columns 5rem 1fr
+  margin 1rem 0 .5rem
+  padding-bottom .5rem
+  transition padding .2s ease-in-out
+
+  @media (min-width: $bp-xl)
+    display -ms-grid
+    grid-template-columns 1fr 1fr
+    margin 1rem 0 2rem
+    padding 0
+    -ms-grid-column-align center
+    -ms-grid-columns 1fr 1fr
+    -ms-grid-row-align center
+    -ms-grid-rows 1fr
+
+  .logo
+    img
+      width 5rem
+
+      @media (min-width: $bp-xl)
+        width 8rem
+        -ms-grid-column 1
+        // -ms-grid-column-span: 3 /*remember the gutter is a column track!*/
+        -ms-grid-row 1
+        -ms-grid-row-align center
