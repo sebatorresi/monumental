@@ -29,8 +29,48 @@
     width 100%
 
 // FIN DEL LANDING DE ULTIMO MOMENTO
+
+// PUBLICIDAD
+.hide--pub
+  display none
+  visibility hidden
+
 .publicidad
   margin 0
+
+  p
+    color lightness($black, 70%)
+    display block
+    // display: none
+    font-size .9em
+    letter-spacing .08em
+    margin 0
+    text-transform uppercase
+
+  .publicidad--top, .publicidad--mid
+    align-items center
+    background lightness($black, 90%)
+    color lightness($black, 60%)
+    display flex
+    font-weight 700
+    justify-content center
+    letter-spacing .05em
+
+    img
+      height auto
+      object-fit cover
+      width 100%
+
+  .publicidad--top
+    min-height 35vh
+
+  &.publicidad--large
+    margin 5rem auto 0
+    width 50vw
+
+  .publicidad--mid
+    min-height 15vh
+    width auto
 
   .video__container
     margin 0
