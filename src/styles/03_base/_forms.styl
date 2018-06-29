@@ -1,138 +1,170 @@
+:focus
+  outline none
+
 .contactos
   form
-    display: flex
-    flex-flow: row wrap
-    overflow: hidden
+    display flex
+    flex-flow row wrap
+    overflow hidden
 
     &> div
-      display: inline-block
-      width: 100%
+      display inline-block
+      width 100%
 
       &> label
-        color: lightness($black, 60%)
-        cursor: pointer
-        display: block
-        font-size: 1.3em
-        letter-spacing: .05em
-        padding: 1rem 0
-        text-transform: uppercase
-        vertical-align: top
+        color lightness($black, 60%)
+        cursor pointer
+        display block
+        font-size 1.3em
+        letter-spacing .05em
+        padding 1rem 0
+        text-transform uppercase
+        vertical-align top
 
-        &> input
-        &> textarea
-          background: transparent
-          border: 1px solid lightness($black, 85%)
-          display: inline-block
-          font-family: 'roboto', sans-serif
-          font-size: 1em
-          height: 1.8rem
-          line-height: 27px
-          margin: 5px 0 0
-          opacity: .7
-          outline: 0
-          padding: 1rem 1rem 1rem .5rem
-          position: relative
-          transition: opacity .3s, border-bottom .3s
-          width: 100%
+        &> input, &> textarea
+          background transparent
+          border 1px solid lightness($black, 85%)
+          display inline-block
+          font-family 'roboto', sans-serif
+          font-size 1em
+          height 1.8rem
+          line-height 27px
+          margin 5px 0 0
+          opacity .7
+          outline 0
+          padding 1rem 1rem 1rem .5rem
+          position relative
+          transition opacity .3s, border-bottom .3s
+          width 100%
 
           &:focus
-            border-bottom: 1px solid $monumental
-            opacity: 1
+            border-bottom 1px solid $monumental
+            opacity 1
 
           &> select
-              background: transparent
-              border: 0
-              display: block
-              font-size: 14px
-              margin: 16px 0 6px
-              opacity: .3
-              outline: 0
-              padding: 0
-              width: 100%
+            background transparent
+            border 0
+            display block
+            font-size 14px
+            margin 16px 0 6px
+            opacity .3
+            outline 0
+            padding 0
+            width 100%
 
-              &:focus
-                border-bottom: 1px solid $monumental
-                opacity: 1
+            &:focus
+              border-bottom 1px solid $monumental
+              opacity 1
 
         .mensaje
-          height: 10rem
-          padding-top: .2rem
+          height 10rem
+          padding-top .2rem
 
-    button,
-    .wpcf7-submit
-      background: $monumental
-      border: 0
-      color: $white
-      cursor: pointer
-      font-size: .8em
-      height: 2rem
-      letter-spacing: .05em
-      outline: 0
-      text-transform: uppercase
-      width: auto
+    button, .wpcf7-submit
+      background $monumental
+      border 0
+      color $white
+      cursor pointer
+      font-size .8em
+      height 2rem
+      letter-spacing .05em
+      outline 0
+      text-transform uppercase
+      width auto
 
     .wpcf7-response-output
-      border: 0
+      border 0
 
-  h1,
-  h2
-    margin-top: 0
+  h1, h2
+    margin-top 0
 
 #mc_embed_signup
-  border: none 
-  text-align: center 
-  width: 100% /* Signup form container */
+  border none
+  text-align center
+  width 100%
 
-.mc-field-group 
-  display: inline-block /* positions input field horizontally */
+.newsletter
+  display grid
+  grid-gap 1rem
+  grid-template-columns 1fr 20vw
+  grid-template-rows 7vh
 
-#mce-EMAIL 
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif 
-  font-size: 1em 
-  border: 2px solid #ABB0B2 
-  color: #343434 
-  background-color: #fff 
-  padding: .7em 9em .7em 1em 
-  border-radius: 3px 
-  display: inline-block 
-  margin: 0 /* Input Styles */
+.mc-field-group
+  display inline-block
+  position relative
 
-.clear 
-  display: inline-block /* positions button horizontally in line with input */
+input[type='text']
+  box-sizing border-box
+  font 15px / 24px 'montserrat', sans-serif
+  letter-spacing 1px
+  width 100%
 
-.button 
-  font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif 
-  font-size: 1em 
-  letter-spacing: .03em 
-  color: #fff 
-  background-color: #2386C8 
-  padding: .7em 2em 
-  border: 2px solid #2386C8 
-  border-radius: 3px 
-  display: inline-block
-  margin: 0 /* Button Styles */
-  
-:-webkit-input-placeholder 
-  color: #ABB0B2 /* WebKit browsers */ 
-:-moz-placeholder 
-  color: #ABB0B2 /* Mozilla Firefox 4 to 18 */
-::-moz-placeholder 
-  color: #ABB0B2 /* Mozilla Firefox 19+ */
-:-ms-input-placeholder 
-  color: #ABB0B2 /* Internet Explorer 10+ */
+.efecto
+  border 0
+  border-bottom 1px solid lightness($white, 50%)
+  padding 1rem 0 .5rem
 
-// @media (min-width: $bp-xl) /* positions input field and button underneath each other with 100% width for tablet and mobile */
-// .mc-field-group 
-//   display: block 
-//   max-width: 100%
+  &~ .focus-border
+    background-color $monumental
+    bottom 0
+    height 2px
+    left 0
+    position absolute
+    transition .4s
+    width 0
 
-// #mce-EMAIL 
-//   padding: .7em 0 .7em 1em 
-//   width: 96% 
-//   margin: 0
-// .clear 
-//   display: block 
-//   width: 100%
-// .button 
-//   width: 100% 
-//   margin: .5em 0 0 0 
+  &:focus ~ .focus-border
+    transition .4s
+    width 100%
+
+#mce-EMAIL
+  background-color transparent
+  display inline-block
+  font-size 1.5em
+  font-weight 400
+  grid-column 1 / 2
+  height 100%
+  letter-spacing .1em
+  margin 0
+  outline 0
+  width 100%
+
+.clear
+  display inline-block
+  grid-column 2 / 3
+  grid-row 1 / 2
+
+.button
+  align-content center
+  background-color $monumental
+  border 1px solid $monumental
+  color $white
+  cursor pointer
+  display flex
+  font-family 'montserrat', sans-serif
+  font-size 1.1em
+  font-weight 600
+  height 7vh
+  justify-content cente
+  letter-spacing .03em
+  margin 0
+  text-transform uppercase
+  width 100%
+
+:-webkit-input-placeholder
+  color $white
+
+:-moz-placeholder
+  color $white
+
+::-moz-placeholder
+  color $white
+
+:-ms-input-placeholder
+  color $white
+
+.footer__newsletter
+  font-size 1em
+
+  @media (min-width: $bp-xl)
+    font-size 1.25em
